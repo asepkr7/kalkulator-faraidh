@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:background="#ffffff"
+    tools:context=".Hasil">
+
+    <RelativeLayout
+        android:id="@+id/titleView1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/Primary">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/back"
+            android:text="Hasil Perhitungan"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleView1"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Primary"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textView99"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data Pewaris :"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="12dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:textColor="#FFffff" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#FFffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:text="Nama"
+                            android:textColor="#FFffff"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:text="Jenis Kelamin"
+                            android:textColor="#FFffff"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="12dp"
+                            android:background="#FFffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:text="Total Harta"
+                            android:textColor="#FFffff"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:text="Hutang"
+                            android:textColor="#FFffff"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:text="P. Jenazah"
+                            android:textColor="#FFffff"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:text="Wasiat"
+                            android:textColor="#FFffff"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="12dp"
+                            android:background="#FFffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jumlah"
+                            android:textColor="#FFffff"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/showNama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:gravity="center"
+                            android:background="@drawable/bgwhite"
+                            android:textColor="@color/green"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/showJK"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:gravity="center"
+                            android:background="@drawable/bgwhite"
+                            android:textColor="@color/green"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="12dp"
+                            android:background="#FFffff" />
+
+                        <TextView
+                            android:id="@+id/RpJumlah"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:gravity="center"
+                            android:background="@drawable/bgwhite"
+                            android:textColor="@color/green"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/RpHutang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:gravity="center"
+                            android:background="@drawable/bgwhite"
+                            android:textColor="@color/green"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/RpPengurusanJenazah"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:gravity="center"
+                            android:background="@drawable/bgwhite"
+                            android:textColor="@color/green"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/RpWasiat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:gravity="center"
+                            android:background="@drawable/bgwhite"
+                            android:textColor="@color/green"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="12dp"
+                            android:background="#FFffff" />
+
+                        <TextView
+                            android:id="@+id/RpTotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:background="@drawable/bgwhite"
+                            android:textColor="@color/green"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--data ahli waris-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@color/Primary"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data Ahli Waris :"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="12dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:textColor="#FFffff" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#FFffff" />
+
+                <!--ahli waris-->
+                <LinearLayout
+                    android:id="@+id/GAnakLakilaki"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" >
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Anak Laki-laki"
+                        android:textColor="#FFffff"
+                        android:textSize="16sp"
+                        android:layout_weight="6.56" />
+
+                    <TextView
+                        android:id="@+id/AnakLakilaki1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/bgwhite"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GAnakPerempuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" >
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Anak Perempuan"
+                        android:textColor="#FFffff"
+                        android:textSize="16sp"
+                        android:layout_weight="6.56" />
+
+                    <TextView
+                        android:id="@+id/AnakPerempuan1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/bgwhite"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GIstri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" >
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Istri"
+                        android:textColor="#FFffff"
+                        android:textSize="16sp"
+                        android:layout_weight="6.56" />
+
+                    <TextView
+                        android:id="@+id/Istri1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/bgwhite"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GSuami"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" >
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Suami"
+                        android:textColor="#FFffff"
+                        android:textSize="16sp"
+                        android:layout_weight="6.56" />
+
+                    <TextView
+                        android:id="@+id/Suami1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/bgwhite"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GAyah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" >
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ayah"
+                        android:textColor="#FFffff"
+                        android:textSize="16sp"
+                        android:layout_weight="6.56" />
+
+                    <TextView
+                        android:id="@+id/Ayah1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/bgwhite"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GIbu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" >
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ibu"
+                        android:textColor="#FFffff"
+                        android:textSize="16sp"
+                        android:layout_weight="6.56" />
+
+                    <TextView
+                        android:id="@+id/Ibu1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/bgwhite"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GKakek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" >
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kakek"
+                        android:textColor="#FFffff"
+                        android:textSize="16sp"
+                        android:layout_weight="6.56" />
+
+                    <TextView
+                        android:id="@+id/Kakek1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/bgwhite"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GNenek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" >
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nenek"
+                        android:textColor="#FFffff"
+                        android:textSize="16sp"
+                        android:layout_weight="6.56" />
+
+                    <TextView
+                        android:id="@+id/Nenek1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/bgwhite"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GSaudaraKandung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" >
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Saudara Kandung"
+                        android:textColor="#FFffff"
+                        android:textSize="16sp"
+                        android:layout_weight="6.56" />
+
+                    <TextView
+                        android:id="@+id/SaudaraKandung1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/bgwhite"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GSaudariKandung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" >
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Saudari Kandung"
+                        android:textColor="#FFffff"
+                        android:textSize="16sp"
+                        android:layout_weight="6.56" />
+
+                    <TextView
+                        android:id="@+id/SaudariKandung1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/bgwhite"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#FFffff" />
+
+                <LinearLayout
+                    android:id="@+id/GKeterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Keterangan"
+                        android:textColor="#FFffff"
+                        android:textSize="16sp"
+                        android:layout_weight="6.56" />
+
+                    <TextView
+                        android:id="@+id/Keterangan1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/bgwhite"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/simpan"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/eTJumlahWasiat"
+                android:layout_gravity="right|bottom"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_background3"
+                android:text="Simpan"
+                android:textSize="19dp"
+                android:textColor="#ffff"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

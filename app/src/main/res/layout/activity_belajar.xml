@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Belajar">
+
+    <RelativeLayout
+        android:id="@+id/titleView1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/Primary">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/back"
+            android:text="Belajar"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="82dp"
+        android:background="@drawable/bgstabilo"
+        android:text="Definisi Waris"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="161dp"
+        android:background="@drawable/bgstabilo"
+        android:text="Contoh Kasus"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>

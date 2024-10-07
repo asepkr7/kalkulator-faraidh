@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    tools:context=".Faraidh">
+
+    <RelativeLayout
+        android:id="@+id/titleView1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/Primary">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/back"
+            android:text="Faroidh / Mawaris"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleView1"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+            <!--materi1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Primary"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="Definisi Ilmu Faroidh"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#FFffff" />
+
+                <TextView
+                    android:id="@+id/textViewMateri1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.10"
+                    android:text="1"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <!--materi2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@color/Primary"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textViewMateri2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.10"
+                    android:text="2"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <!--materi3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@color/Primary"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="Rukun Waris"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#FFffff" />
+
+                <TextView
+                    android:id="@+id/textViewMateri3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.10"
+                    android:text="3"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <!--materi4-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@color/Primary"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="Syarat Waris"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#FFffff" />
+
+                <TextView
+                    android:id="@+id/textViewMateri4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.10"
+                    android:text="4"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <!--materi6-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@color/Primary"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="Bagian Ilmu Faroidh"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#FFffff" />
+
+                <TextView
+                    android:id="@+id/textViewMateri6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.10"
+                    android:text="6"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <!--materi7-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@color/Primary"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="Tata Cara Pembagian"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#FFffff" />
+
+                <TextView
+                    android:id="@+id/textViewMateri7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.10"
+                    android:text="7"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <!--materi8-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@color/Primary"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textViewMateri8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.10"
+                    android:text="8"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <!--materi9-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@color/Primary"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textViewMateri9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.10"
+                    android:text="9"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

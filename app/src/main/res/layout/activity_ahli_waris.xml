@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".AhliWaris">
+
+    <RelativeLayout
+        android:id="@+id/titleView1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/Primary">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/back"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/back"
+            android:text="Data Ahli Waris"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!--anak lakilaki-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bgstabilo"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="Anak Laki-laki"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/eTAnakLakilaki"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:hint="0"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <!--anak perempuan-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bgstabilo"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="Anak Perempuan"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/eTAnakPerempuan"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:hint="0"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <!--Suami-->
+            <LinearLayout
+                android:id="@+id/GSuami"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bgstabilo"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="Suami"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/eTSuami"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:hint="0"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <!--istri-->
+            <LinearLayout
+                android:id="@+id/GIstri"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bgstabilo"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="Istri"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/eTIstri"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:hint="0"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <!--ayah-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bgstabilo"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="Ayah"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/eTAyah"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:hint="0"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <!--ibu-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bgstabilo"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="Ibu"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/eTIbu"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:hint="0"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <!--Kakek-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bgstabilo"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="Kakek"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/eTKakek"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:hint="0"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <!--nenek-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bgstabilo"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="Nenek"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/eTNenek"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:hint="0"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <!--saudara kandung-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bgstabilo"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="Saudara Kandung"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/eTSaudaraKandung"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:hint="0"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <!--saudari kandung-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bgstabilo"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="Saudari Kandung"
+                    android:textColor="#FFffff"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/eTSaudariKandung"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:hint="0"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/selesaiAhliWaris"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/eTJSaudariKandung"
+                android:layout_gravity="right|bottom"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_background3"
+                android:text="Selesai"
+                android:textSize="19dp"
+                android:textColor="#ffff"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

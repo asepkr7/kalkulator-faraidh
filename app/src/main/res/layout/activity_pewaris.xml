@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".Pewaris">
+    <RelativeLayout
+        android:id="@+id/titleView1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/Primary">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/back"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/back"
+            android:text="Data Pewaris"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleView1"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Identitas Pewaris"
+                android:textColor="@color/Primary"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Nama (*)"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:id="@+id/eTNama"
+                android:maxLength="20"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Masukkan Nama (Max 15 karakter)"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Jenis Kelamin (*)"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <RadioGroup
+                android:id="@+id/jkGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbLakiLaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Laki-Laki"
+                    android:textColor="@color/Primary" />
+
+                <RadioButton
+                    android:id="@+id/rbPerempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Perempuan"
+                    android:textColor="@color/Primary" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Harta Pewaris"
+                android:textColor="@color/Primary"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Jumlah Harta (*)"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/eTJumlahHarta"
+                android:maxLength="10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:hint="Jumlah Harta (Rp)"
+                android:inputType="number" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Hutang"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:maxLength="10"
+                android:id="@+id/eTJumlahHutang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Hutang (Rp)"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Pengurusan Jenazah"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:maxLength="10"
+                android:id="@+id/eTJumlahPengurusuanJenazah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Pengurusan Jenazah (Rp)"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Wasiat"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:maxLength="10"
+                android:id="@+id/eTJumlahWasiat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Wasiat (Rp) 1/3 dari Harta"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/selesaiHitung"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/eTJumlahWasiat"
+                android:layout_gravity="right|bottom"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_background3"
+                android:text="Selanjutnya"
+                android:textSize="19dp"
+                android:textColor="#ffff"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
